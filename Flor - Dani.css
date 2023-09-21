@@ -1,0 +1,156 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://i.pinimg.com/originals/84/ad/a4/84ada4bbb509bbc1e1bdaea876510e01.png');
+  background-size: cover; /* Para cubrir todo el tamaño del body */
+  background-repeat: no-repeat; /* Para que la imagen no se repita */
+  }
+  
+h1 {
+    font-family: "Lato", cursive;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-family: "Lato", cursive;
+    font-size: 1em;
+    color: rgb(248, 248, 255);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .sunflower {
+    position: relative;
+    width: 300px; /* Ajustamos el tamaño para centrar y organizar */
+  }
+  
+  .center {
+    background-color: black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    left: 195px;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Colocamos el centro del girasol en frente de los pétalos */
+  }
+  
+  .stem {
+    background-color: #228B22; /* Verde */
+    width: 20px;
+    height: 200px;
+    position: absolute;
+    top: 180px;
+    left: 195px;
+
+    transform: translate(-50%, 0);
+    z-index: 0; /* Colocamos el tallo detrás de los pétalos */
+  }
+  
+  .petal {
+    position: absolute;
+    top: -190px;
+    left: 155px;
+    background-color: #FFD700; /* Amarillo */
+    border-radius: 50%;
+    width: 80px;
+    height: 200px;
+    transform-origin: 50% 100%;
+  }
+  
+  /* Resto del código para la forma y posición de los pétalos */
+  
+  .leaf {
+    background-color: #228B22; /* Verde */
+    width: 20px;
+    height: 80px;
+    
+    transform-origin: bottom center;
+  }
+  
+  .leaf-left {
+    transform: rotate(-45deg);
+    top: 90%; /* Ajustamos la posición vertical */
+    left: 30%;
+    position: absolute;
+    top: 180px;
+    left: 195px;
+  }
+  
+  .leaf-right {
+    transform: rotate(45deg);
+    top: 90%; /* Ajustamos la posición vertical */
+    left: 50%;
+    position: absolute;
+    top: 180px;
+    left: 185px;
+  }
+  
+  
+  .petal1 {
+    transform: rotate(30deg);
+  }
+  
+  .petal2 {
+    transform: rotate(60deg);
+  }
+  
+  .petal3 {
+    transform: rotate(90deg);
+  }
+  
+  .petal4 {
+    transform: rotate(120deg);
+  }
+  
+  .petal5 {
+    transform: rotate(150deg);
+  }
+  
+  .petal6 {
+    transform: rotate(180deg);
+  }
+  
+  .petal7 {
+    transform: rotate(-30deg);
+  }
+  
+  .petal8 {
+    transform: rotate(-60deg);
+  }
+  
+  .petal9 {
+    transform: rotate(-90deg);
+  }
+  
+  .petal10 {
+    transform: rotate(-120deg);
+  }
+  
+  .petal11 {
+    transform: rotate(-150deg);
+  }
+  
+  .petal12 {
+    transform: rotate(-180deg);
+  }
+  
+  .petal13 {
+    transform: rotate(0deg); /* Pétalo superior */
+  }
+  
+  .petal::before, .petal::after {
+    content: '';
+    position: absolute;
+    background-color: #FFD700; /* Amarillo */
+    border-radius: 50%;
+    width: 80px;
+    height: 200px;
+  }
+  
